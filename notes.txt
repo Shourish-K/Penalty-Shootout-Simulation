@@ -1,0 +1,38 @@
+Goal Post:
+
+- Dimensions: L x H = 7.3m x 2.4m ✓
+- Map displaying all shots taken ✓
+
+Shot taker:
+
+- Shot staying in the goal post is based on the Penalties section of the dataset (prob of hit  = pen/100)
+- Shot accuracy determined by SHO category (We will have a normal model based on that)
+- Better SHO the lower the standard deviation from the shot
+- Higher shot power makes the ball harder to stop for the keeper, but it also increases the standard deviation on your shot accuracy
+- To determine where the player will take the shot we will use random variables, but this will be based on probability of their preferred foot
+  players who are right footed tend to shoot to the left vice versa, players with higher overall have more variability
+
+Goal Keeper:
+
+- Start position of the keeper depends on the positioning of the GK Pos column
+- GK Diving affects the goal keepers reach
+- GK reflex is the factor that will show us the probability of the keeper jumping the right way
+- There will be a keeper are that will be use a blocking area
+- Whether a goal is scored or not will be dependent on if the blocked area and ball overlap
+- If the ball is on the edge of the block area then there will be a mechanism that will model the deflection chance of the goal being scored
+
+Variability:
+
+- Check what is the best order for the team
+- Simulation can be repeated to understand what the keeper must do to save more goals
+- We can also simulate a single scorer to find out his tendencies to score
+
+Questions:
+
+- Best team order?
+- What is the best possible team out of all the players?
+- Measure player tendencies (setup teams such that they only take one player at a time)
+- How many rounds does the penalty shootout last at average?
+- Help in team selection
+
+(more stuff can be added for now this is the basic plan)
